@@ -16,8 +16,9 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans&display=swap');
 #pokedex-app {
-    font-family: 'Encode Sans';
+    font-family: 'Encode Sans', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
@@ -28,5 +29,12 @@ export default {
     line-height: 24px;
     letter-spacing: 0.40px;
     word-wrap: break-word;
+}
+
+/* Mobile Styling */
+@media screen and (max-width: 450px) {
+    #pokedex-app {
+        padding: 24px;
+    }
 }
 </style>

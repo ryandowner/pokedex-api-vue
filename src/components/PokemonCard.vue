@@ -21,14 +21,15 @@ export default {
 <style scoped>
 .card {
     border-radius: 16px;
-    background: #ffffff;
+    background: #FDFDFD;
     display: flex;
     align-items: center;
-    max-width: 250px;
+    padding: 12px;
+    grid-gap: 12px;
 }
 .card-image {
     display: flex;
-    margin: 12px;
+    width: 60px;
 }
 .card-image img {
     height: 60px;

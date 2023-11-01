@@ -224,6 +224,49 @@ export default {
 .results-footer {
     display: flex;
     justify-content: space-between;
-    margin-top: 40px;
+    align-items: flex-end;
+    min-height: 200px;
+    margin-top: 12px;
+}
+.results-footer button {
+    color: #024E74;
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px #024E74 solid;
+    border-radius: 4px;
+}
+.results-footer button:disabled {
+    cursor: not-allowed;
+}
+
+/* Header Mobile Styling */
+@media screen and (max-width: 640px) {
+    .results-header {
+        flex-direction: column;
+    }
+}
+
+/* Results Mobile Styling */
+@media screen and (min-width: 768px) and (max-width: 950px) {
+    .results-full:not(.results-full--no-results) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media screen and (min-width: 530px) and (max-width: 767px) {
+    .results-full:not(.results-full--no-results) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 529px) {
+    .results-full:not(.results-full--no-results) {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Footer Mobile Styling */
+@media screen and (max-width: 767px) {
+    .results-footer {
+        min-height: 40px;
+    }
 }
 </style>
